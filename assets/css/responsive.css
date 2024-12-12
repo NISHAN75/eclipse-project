@@ -72,6 +72,16 @@
     max-width: 200px;
 }
 /* footer section end */
+
+  /* news area section start */
+  .news-tab-content-wrapper {
+    flex-direction: column;
+    gap: 30px;
+}
+.news-big-item {
+    max-width: 100%;
+}
+  /* news area section end */
 }
  
 /* Tablet desktop :768px. */
@@ -239,6 +249,13 @@ h4 {
         flex-direction: column;
     }
        /* footer section end */
+
+         /* news area section start */
+    .news-item-info.d-flex.align-items-center {
+        flex-direction: column;
+        align-items: start !important;
+    }
+  /* news area section end */
 }
  
 /* Large Mobile :575px. */
