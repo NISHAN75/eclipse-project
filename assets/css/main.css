@@ -261,9 +261,44 @@ h6 {
 
 /*================== 1.default css end==================== */
 /*================== 2.header section start css==================== */
+
+
+/* offcanvas */
+.offcanvas {
+  background-color: #000;
+  color: #fff;
+}
+.offcanvas-body {
+  padding: 20px 40px;
+}
+/* offcanvas */
+/* mobile menu */
+.mobile-menu ul li a {
+  font-size: 18px;
+  position: relative;
+  z-index: 1;
+  transition: all 0.3s linear;
+}
+.mobile-menu ul li.active:hover > a ,
+.mobile-menu ul li:hover > a{
+  color: #006FBA;
+}
+
+.mobile-menu ul li {
+  margin-bottom: 10px;
+  position: relative;
+  z-index: 1;
+}
+.mobile-menu ul li .sub-menu li a{
+  font-size: 16px;
+}
+/* mobile menu */
+
+
 .main-menu-wrapper {
     gap: 52px;
 }
+.mobile-menu ul ,
 .sub-menu ,
 .main-menu ul {
     padding: 0;
@@ -284,6 +319,8 @@ h6 {
 }
 .main-menu ul li.has-childern:hover > a::before {
     border-color: #67C3EC;
+    transform: rotate(-225deg);
+    margin-top: 6px;
 }
 .main-menu ul li a{
     transition: all 0.3s linear;
@@ -300,6 +337,7 @@ h6 {
 } 
 .header-area.header-sticky .main-menu ul li.has-childern:hover > a::before{
   border-color: #fff;
+  transform: rotate(-225deg);
 } 
 .main-menu ul li:hover > a{
     color: #67C3EC;
@@ -308,6 +346,7 @@ h6 {
   opacity: 1;
   visibility: visible;
 }
+.mobile-menu ul li.has-childern > a::before ,
 .main-menu ul li.has-childern > a::before {
     content: "";
     position: absolute;
@@ -321,6 +360,17 @@ h6 {
     transform: rotate(-45deg);
     transform-origin: center;
     transition: all 0.3s linear;
+}
+.mobile-menu ul li.has-childern:hover > a::before{
+  border-color: #006FBA;
+}
+.mobile-menu ul li.has-childern.active > a::before{
+  transform: rotate(-225deg);
+  margin-top: 4px;
+
+}
+.mobile-menu ul li.has-childern > a::before {
+  top: 8px;
 }
 .main-menu ul li:last-child{
     margin-right: 0;
@@ -376,7 +426,7 @@ input.search-input {
   width: 190px;
   position: absolute;
   left: 0;
-  top: 28;
+  top: 28px;
   border-radius: 10px;
   background: #121212;
   padding: 22px 24px 28px 24px !important;
@@ -384,6 +434,18 @@ input.search-input {
   visibility: hidden;
   transition: all 0.3s linear;
 }
+.mobile-menu ul .sub-menu {
+  opacity: 1;
+  visibility: visible;
+  position: relative;
+  transition: none;
+  top: 0;
+  width: 100%;
+  padding: 20px;
+  background-color: transparent;
+  display: none;
+}
+
 .header-area.header-sticky .main-menu ul li .sub-menu li a ,
 .main-menu ul li .sub-menu li a {
   color: #FFF;

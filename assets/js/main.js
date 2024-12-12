@@ -28,6 +28,62 @@ function animateCounters() {
 }
 animateCounters(); 
 
+
+
+
+
+let offcanvasElement = $(".header-offcanvas");
+        offcanvasElement.on("show.bs.offcanvas", function () {
+            $(".menu-icon").addClass("open");
+            $(".close-icon span:nth-child(1)").css({
+                transform: "rotate(45deg)"
+            });
+            $(".close-icon span:nth-child(2)").css({
+                transform: "rotate(-45deg)",
+                marginTop: "-1px"
+            });
+        });
+        offcanvasElement.on("hide.bs.offcanvas", function () {
+            $(".menu-icon").removeClass("open");
+            $(".close-icon span:nth-child(1)").css({
+                transform: ""
+            });
+            $(".close-icon span:nth-child(2)").css({
+                transform: "",
+                marginTop: ""
+            });
+        });
+
+                // mobile menu
+                const $mobileMenu = $(".mobile-menu");
+                $mobileMenu.find("ul > li > a").on("click", function (e) {
+                    const $menuItem = $(this).closest("li");
+        
+                    // Remove 'active' class from all other menu items
+                    $mobileMenu.find("ul > li").removeClass("active");
+                    $menuItem.addClass("active");
+                    const $submenu = $(this).siblings(".sub-menu");
+        
+                    if ($submenu.is(":visible")) {
+                        $submenu.slideUp();
+                        $menuItem.removeClass("active");
+                    } else {
+                        // Slide down if not visible
+                        $(".sub-menu").slideUp();
+                        $(".has-childern > a").removeClass("active");
+                        $submenu.stop(true, true).slideDown();
+                    }
+                    // Prevent default behavior for menu-link class items
+                    if ($menuItem.hasClass("has-childern")) {
+                        e.preventDefault();
+                    }
+                });
+
+
+
+
+
+
 // testimonial 
 var swiper = new Swiper(".testimonial-slider", {
     navigation: {

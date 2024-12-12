@@ -24,8 +24,10 @@
 
 
         <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+          <div class="offcanvas-header justify-content-between">
+            <a href="#" class="heaer-logo" >
+                <img src="assets/images/logo/header-logo.svg" alt="">
+            </a>
             <button type="button" class="close-icon" data-bs-dismiss="offcanvas" aria-label="Close">
                 <span style="transform: rotate(45deg);"></span>
                 <span style="transform: rotate(-45deg); margin-top: -1px;"></span>
@@ -35,8 +37,19 @@
             <div class="offcanvas-menu-area">
                 <div class="mobile-menu">
                     <ul>
-                        <li>
+                        <li class="has-childern">
                             <a href="#">DocOrigin Platform</a>
+                            <ul class="sub-menu">
+                                <li>
+                                    <a href="#">DocOrigin Platform</a>
+                                </li>
+                                <li>
+                                    <a href="#">DocOrigin Platform</a>
+                                </li>
+                                <li>
+                                    <a href="#">DocOrigin Platform</a>
+                                </li>
+                            </ul>
                         </li>
                         <li>
                             <a href="#">DocOrigin Platform</a>
@@ -502,6 +515,73 @@
 			</div>
 		</section>
 		<!-- industries section end -->
+
+        <!-- precision section start -->
+        <section class="precision-area news-area">
+            <div class="container">
+                <div class="section-title-wrapper d-flex justify-content-between align-items-center flex-wrap">
+                    <div class="title-info-wrapper">
+                        <h2 class="animation-text">Latest News</h2>
+                        <div class="animation-line">
+                        <p>Stay informed on the latest developments, industry insights, and company announcements from Eclipse Corporation.</p>
+                        </div>
+                    </div>
+                    <div class="animation-line">
+                        <a href="#" class="eclipse-btn">READ ALL</a>
+                    </div>
+                </div>
+                <div class="tab-content-area">
+                    <!-- Tabs Navigation -->
+                    <ul class="nav nav-tabs animation-line" id="myTab" role="tablist">
+                        <li>
+                        <button class="nav-tab-btn active" id="assembly-tab" data-bs-toggle="tab" data-bs-target="#assembly" type="button" role="tab" aria-controls="assembly" aria-selected="true">Blogs</button>
+                        </li>
+                        <li>
+                        <button class="nav-tab-btn" id="algorithm-tab" data-bs-toggle="tab" data-bs-target="#algorithm" type="button" role="tab" aria-controls="algorithm" aria-selected="false">Press Releases</button>
+                        </li>
+                        <li>
+                        <button class="nav-tab-btn" id="bursting-tab" data-bs-toggle="tab" data-bs-target="#bursting" type="button" role="tab" aria-controls="bursting" aria-selected="false">Events</button>
+                        </li>
+                    </ul>
+                    <div class="tab-content animation-line" id="myTabContent">
+                        <div class="tab-pane fade show active" id="assembly" role="tabpanel" aria-labelledby="assembly-tab">
+                            <div class="tab-content-inner-wrapper d-flex align-items-center flex-wrap">
+                            <div class="tab-content-img">
+                                <img src="assets/images/nav-tab/tab-content-img.jpg" alt="img" class="b-radius-17">
+                            </div>
+                            <div class="tab-content-inner-info mb-p">
+                                <h3>Document Assembly</h3>
+                                <p>DocOrigin’s advanced assembly capabilities allow for dynamic creation of complex documents by combining multiple data sources and layouts. This feature enables businesses to build tailored documents without manual intervention, reducing time and errors in document creation.</p>
+                            </div>
+                            </div>
+                        </div>
+                        <div class="tab-pane fade" id="algorithm" role="tabpanel" aria-labelledby="algorithm-tab">
+                            <div class="tab-content-inner-wrapper d-flex align-items-center flex-wrap">
+                                <div class="tab-content-img">
+                                    <img src="assets/images/nav-tab/tab-content-img.jpg" alt="img" class="b-radius-17">
+                                </div>
+                                <div class="tab-content-inner-info mb-p">
+                                    <h3>Pagination Algorithm</h3>
+                                    <p>DocOrigin’s advanced assembly capabilities allow for dynamic creation of complex documents by combining multiple data sources and layouts. This feature enables businesses to build tailored documents without manual intervention, reducing time and errors in document creation.</p>
+                                </div>
+                                </div>
+                        </div>
+                        <div class="tab-pane fade" id="bursting" role="tabpanel" aria-labelledby="bursting-tab">
+                            <div class="tab-content-inner-wrapper d-flex align-items-center flex-wrap">
+                                <div class="tab-content-img">
+                                    <img src="assets/images/nav-tab/tab-content-img.jpg" alt="img" class="b-radius-17">
+                                </div>
+                                <div class="tab-content-inner-info mb-p">
+                                    <h3>Bursting</h3>
+                                    <p>DocOrigin’s advanced assembly capabilities allow for dynamic creation of complex documents by combining multiple data sources and layouts. This feature enables businesses to build tailored documents without manual intervention, reducing time and errors in document creation.</p>
+                                </div>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- precision section end-->
 
 		<!-- testimonial section start -->
 		<section class="testimonial-area overflow-hidden">
