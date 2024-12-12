@@ -1,0 +1,55 @@
+/* dark version */
+:root {
+    /* body color */
+    --body-color: #000;
+    /* anchor color */
+    --anchor-color:#fff;
+    /* default color */
+    --deafult-white-color:#fff;
+    /* nav link color */
+    --nav-link-color:#DEE9F1;
+    /* heading colo */
+    --heading-color:#fff;
+    /* heading color */
+    --heading-color:#fff;
+    /* font color */
+    --font-color:#BCC2C4;
+    /* span color */
+    --span-color:#67C3EC;
+    /* background gradient 1 */
+    --background-gradient-1:linear-gradient(90deg, #67C3EC 0%, #006FBA 100%);
+    /* background gradient 2 */
+    --background-gradient-2:linear-gradient(0deg, #67C3EC 0%, #006FBA 100%);
+    /* background gradient 3 */
+    --background-gradient-3:linear-gradient(180deg, #006FBA 0%, #004574 100%);
+    /* background gradient 4 */
+    --background-gradient-4:linear-gradient(180deg, #67C3EC 0%, #006FBA 100%);
+    /* background gradient 5 */
+    --background-gradient-5:linear-gradient(90deg, #67C3EC 0%, #006FBA 81.99%);
+    /* counter span */
+    --counter-span:#DEE9F1;
+    /* card bg */
+    --card-bg:#006FBA;
+    /* input background */
+    --input-bg:#121212;
+    /* header-logo */
+    --header-logo:url('../images/logo/header-logo-white.svg');
+    /* banner circle */
+    --banner-circle:url('../images/banner/circle-img.svg');
+    /* business title p */
+    --business-title-p:#fff;
+    /* nav tab */
+    --nav-tab:#fff;
+    /* outperform bg */
+    --outperform-bg:#121212;
+    /* modification circle */
+    --modification-circle:url('../images/modification/modification-circle.svg');
+    /* blockqoute icon */
+    --blockqoute-icon:url('../images/testimonial/quote.svg');
+    /* blockqoute color */
+    --blockqoute-color:#fff;
+    /* testimonial border */
+    --testimonial-border:#4A4A4A;
+    /* footer  graident*/
+    --footer-graident:url('../images/footer/footer-graident.svg');
+  }
