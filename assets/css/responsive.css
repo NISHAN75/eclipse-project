@@ -45,7 +45,7 @@
 
 /*================== 2.header section start css==================== */
     .main-menu ul li {
-        margin-right: 20px;
+        margin-right: 25px;
     }
     .main-menu-wrapper {
         gap: 30px;
@@ -60,6 +60,18 @@
     max-width: 500px;
 }
 /*================== 5.precision area section end css==================== */
+
+/* footer section start */
+.main-footer-area .row .col {
+    max-width: 150px;
+}
+.main-footer-area .row .col:nth-child(2) {
+    max-width: 200px;
+}
+.main-footer-area .row .col:nth-child(4) {
+    max-width: 200px;
+}
+/* footer section end */
 }
  
 /* Tablet desktop :768px. */
@@ -177,6 +189,19 @@ h4 {
      --bs-gutter-y: 50px;
  }
 /* testimonial area section end */
+
+/* footer section start */
+.main-footer-area .row .col {
+    max-width: 100%;
+    flex: 50%;
+}
+.main-footer-area .row .col:nth-child(4) ,
+.main-footer-area .row .col:nth-child(2) {
+    max-width: 100%;
+}
+
+/* footer section end */
+
 }
 
  
@@ -203,6 +228,17 @@ h4 {
         margin-bottom: 40px;
         }
        /* modification section end */
+
+       /* footer section start */
+       .footer-bottom {
+        flex-direction: column;
+        gap: 20px;
+    }
+       .footer-bottom-inner {
+        gap: 15px;
+        flex-direction: column;
+    }
+       /* footer section end */
 }
  
 /* Large Mobile :575px. */
@@ -244,7 +280,13 @@ h4 {
 }
 /* Large Mobile :380px. */
 @media (max-width: 380px) {
+/* footer section start */
+.main-footer-area .row .col {
+    max-width: 100%;
+    flex: 100%;
+}
 
+/* footer section end */
 
 }
 /* Large Mobile :360px. */
