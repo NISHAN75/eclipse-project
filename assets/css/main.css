@@ -471,6 +471,8 @@ input.search-input {
 }
 
 .close-icon {
+  border: 0;
+  background-color: transparent;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -493,11 +495,11 @@ input.search-input {
 }
 
 .close-icon:hover {
-  color: #C1132A;
+  color: #006FBA;
 }
 
 .close-icon:hover span {
-  background-color: #C1132A;
+  background-color: #006FBA;
 }
 
 /*================== 2.header section end css==================== */
