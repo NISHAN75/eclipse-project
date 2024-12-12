@@ -120,6 +120,20 @@ h4 {
 
 
 
+
+
+
+/*================== 2.header section start css==================== */
+.heaer-logo {
+    height: 50px;
+    width: 100px;
+}
+.header-area {
+    background: linear-gradient(90deg, #67C3EC 0%, #006FBA 100%);
+    padding: 12px 0;
+}
+/*================== 2.header section end css==================== */
+
 /*================== 3.banner section start css==================== */
 .banner-area .col:nth-child(1) {
     flex-basis: 100%;
@@ -250,7 +264,7 @@ h4 {
     }
        /* footer section end */
 
-         /* news area section start */
+    /* news area section start */
     .news-item-info.d-flex.align-items-center {
         flex-direction: column;
         align-items: start !important;

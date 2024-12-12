@@ -320,6 +320,10 @@ h6 {
   position: relative;
   z-index: 1;
 }
+.mobile-menu ul li .sub-menu li a svg{
+  display: inline-block;
+  margin-right: 8px;
+}
 .mobile-menu ul li .sub-menu li a{
   font-size: 16px;
 }
@@ -330,6 +334,7 @@ h6 {
   display: inline-block;
   width: 143px;
   background-image: var(--header-logo);
+  background-size: contain;
 }
 .main-menu-wrapper {
     gap: 52px;
@@ -350,7 +355,7 @@ h6 {
     display: inline-block;
     position: relative;
     z-index: 1;
-    margin-right: 75px; 
+    margin-right: 65px; 
     transition: all 0.3s linear;
 }
 .main-menu ul li.has-childern:hover > a::before {
@@ -639,8 +644,8 @@ input.search-input {
 
 /*================== 3.banner section start css==================== */
 .banner-area {
-    min-height: 100vh;
-    padding: 100px 0 94px;
+  min-height: 100vh;
+  padding: 170px 0 94px;
 }
 .banner-area .row{
     --bs-gutter-x:0px;
@@ -652,14 +657,17 @@ input.search-input {
     border-radius: 17px;
 }
 .sub-title {
-    color: var(--span-color);
-    font-family: "Newsreader", serif;
-    font-size: 24px;
-    font-weight: 400;
-    line-height: 1.1;
+  color: var(--span-color);
+  font-family: "Newsreader", serif;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 10px;
+  display: inline-block;
 }
 .banner-content p {
     font-size: 18px;
+    margin-bottom: 0;
 }
 .banner-content .eclipse-btn{
     margin-top: 20px;
