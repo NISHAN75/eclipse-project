@@ -1,0 +1,262 @@
+/*
+  The Name:Georgia Mechanical
+  Author: 
+  Support: 
+  Description: Georgia Mechanical
+  Version: 1.0
+*/
+
+/* CSS Index
+-----------------------------------
+1.default css
+2.header section 
+3.banner section
+-----------------------------------
+*/
+
+
+/* Normal desktop :1500px. */
+@media(max-width: 1500px) {
+
+
+}
+
+
+/* Normal desktop :992px. */
+@media(max-width: 1300px) {
+
+/*================== 2.header section start css==================== */    
+.main-menu ul li {
+    margin-right: 50px;
+}
+/*================== 2.header section end css==================== */    
+
+/*================== 3.banner section start css==================== */
+    .banner-area .col:nth-child(1) {
+        flex-basis: 50%;
+        max-width: 50%;
+    }
+    .banner-area .row {
+        --bs-gutter-x: 20px;
+    }
+/*================== 3.banner section end css==================== */
+}
+@media(max-width: 1200px) {
+
+/*================== 2.header section start css==================== */
+    .main-menu ul li {
+        margin-right: 20px;
+    }
+    .main-menu-wrapper {
+        gap: 30px;
+    }
+/*================== 2.header section end css==================== */
+
+/*================== 5.precision area section start css==================== */
+.tab-content-inner-wrapper {
+    gap: 30px;
+}
+.tab-content-img {
+    max-width: 500px;
+}
+/*================== 5.precision area section end css==================== */
+}
+ 
+/* Tablet desktop :768px. */
+@media(max-width: 991px) {
+
+
+    /* heading */
+    
+h1 {
+    font-size: 40px;
+}
+
+h2 {
+    font-size: 36px;
+}
+
+h3 {
+    font-size: 32px;
+}
+
+h4 {
+    font-size: 24px;
+}
+
+
+    /* heading */
+
+/* all padding */
+.testimonial-area ,
+.modification-area ,
+.business-card ,
+.precision-area{
+    padding: 70px 0;
+}
+/* all padding */
+
+
+
+/*================== 3.banner section start css==================== */
+.banner-area .col:nth-child(1) {
+    flex-basis: 100%;
+    max-width: 100%;
+}
+.banner-img ,
+.banner-content {
+    max-width: 100%;
+}
+/*================== 3.banner section end css==================== */
+
+/*================== 4.business card section start css==================== */
+.card-area .row{
+    --bs-gutter-x: 20px;
+}
+.card-content p {
+    padding: 0 20px;
+}
+
+/*================== 4.business card section end css==================== */
+
+/*================== 5.precision area section start css==================== */
+.title-info-wrapper {
+    flex-basis: 550px;
+}
+.tab-content-inner-info ,
+.tab-content-img {
+    max-width: 100%;
+    flex-basis: 100%;
+}
+.nav-tabs li {
+    padding-right: 15px;
+}
+.nav-tabs::before {
+    bottom: 0;
+}
+/*================== 5.precision area section end css==================== */
+/* counter area */
+   
+.counter-area .row .col ,
+.counter-area .row .col:nth-child(2) ,
+.counter-area .row .col:nth-child(3) {
+     max-width: 100%;
+     flex-basis: 100%;
+ }
+ .counter-card {
+     text-align: center;
+ }
+ .counter-area .row .col:nth-child(3) .counter-card {
+     max-width: 178px;
+     margin-right: auto;
+     margin-left: auto;
+ }
+ .counter-area .col::before {
+     display: none;
+ }
+/* counter area */
+
+
+/* modification section start */
+.modification-item {
+     margin-bottom: 80px;
+ }
+ .desk-img ,
+ .modification-content p ,
+ .modification-img  ,
+ .modification-content {
+     max-width: 100%;
+ }
+
+/* modification section end */
+
+
+/* testimonial area section start */
+.testimonial-content-wrapper .row {
+     --bs-gutter-x: 24px;
+     --bs-gutter-y: 50px;
+ }
+/* testimonial area section end */
+}
+
+ 
+/* small mobile :767px. */
+@media (max-width: 767px) {
+/* all padding */
+.testimonial-area ,
+.modification-area ,
+.business-card ,
+.precision-area{
+    padding: 50px 0;
+}
+/* all padding */
+
+
+/*================== 5.precision area section start css==================== */
+.title-info-wrapper {
+    flex-basis: 100%;
+}
+/*================== 5.precision area section end css==================== */
+
+    /* modification section start */
+    .modification-item {
+        margin-bottom: 40px;
+        }
+       /* modification section end */
+}
+ 
+/* Large Mobile :575px. */
+@media (max-width: 575px) {
+
+    /* heading */
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    h2 {
+        font-size: 30px;
+    }
+    
+    h3 {
+        font-size: 28px;
+    }
+    
+    h4 {
+        font-size: 24px;
+    }
+    
+    
+        /* heading */
+    
+}
+/* Large Mobile :480px. */
+@media (max-width: 480px) {
+/*================== 5.precision area section start css==================== */
+.nav-tab-btn {
+    font-size: 14px;
+}
+.nav-tabs li {
+    padding-right: 8px;
+}
+/*================== 5.precision area section end css==================== */
+ 
+}
+/* Large Mobile :380px. */
+@media (max-width: 380px) {
+
+
+}
+/* Large Mobile :360px. */
+@media (max-width: 360px) {
+
+ /*================== 5.precision area section start css==================== */
+.nav-tab-btn {
+    font-size: 12px;
+}
+.nav-tabs li {
+    padding-right: 5px;
+}
+/*================== 5.precision area section end css==================== */
+ 
+}
