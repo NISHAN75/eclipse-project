@@ -16,6 +16,20 @@
 -----------------------------------
 */
 
+/* variable */
+/* dark version */
+:root {
+  /* body color */
+  --body-color: #000;
+  /* heading color */
+  --heading-color:#fff;
+  /* font color */
+  --font-color:#BCC2C4;
+  /* span color */
+  --span-color:#67C3EC;
+  /* background gradient */
+  --background-gradient:
+}
 
 
 /*================== 1.default css start==================== */
@@ -483,11 +497,9 @@ input.search-input {
   font-family: "Newsreader", serif;
   font-size: 14px;
   line-height: 1.1;
-  display: flex;
-  align-items: center;
-  gap: 9px;
   position: relative;
   z-index: 1;
+  display: block;
 }
 .main-menu ul li .sub-menu li a::before{
   content: "";
@@ -508,7 +520,11 @@ input.search-input {
   visibility: visible;
 }
 .main-menu ul li .sub-menu li a svg {
-  transform: translateY(-3px);
+  transform: translateY(-2px);
+  margin-right: 7px;
+  display: inline-block;
+  opacity: 1;
+  visibility: visible;
 }
 .main-menu ul li .sub-menu li {
   display: block;
@@ -782,8 +798,11 @@ input.search-input {
 
 
 /*================== 6.outperform section start css==================== */
+.counter-area {
+  margin-top: 40px;
+}
 .outperform-area {
-    padding: 75px 0 255px;
+  padding-top: 75px;
 }
 .outperform-area .container{
     max-width: 942px;
@@ -794,8 +813,11 @@ input.search-input {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-.counter-card p {
-    color: #DEE9F1;
+.location-img {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 20px;
 }
 /*================== 6.outperform section end css==================== */
 
